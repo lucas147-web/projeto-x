@@ -53,7 +53,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="questoes/questao1.php" class="nav-link active">
+                <a href="questao1.php" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Questão 1</p>
                 </a>
@@ -65,7 +65,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="questoes/questao10.php" class="nav-link">
+                <a href="questao10.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Questão 10</p>
                 </a>

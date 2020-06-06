@@ -18,16 +18,16 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>PHP AdminLTE 3 | Dashboard</title>
+  <title>Questão 10</title>
   <?php
-    include "header.php";
+    include "projeto-X/header.php";
     ?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
 <?php
-    include "sidebar.php";
+    include "projeto-X/sidebar.php";
 ?>
 
   <!-- Content Wrapper. Contains page content -->
@@ -95,7 +95,7 @@
   <!-- /.content-wrapper -->
 
   <?php
-    include "footer.php";
+    include "htdocs/projeto-X/footer.php";
   ?>
 
 
