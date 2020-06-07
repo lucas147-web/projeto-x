@@ -67,13 +67,13 @@ function soma1($num,$num1){
                     <div class="form-group row">
                         <label for="distancia" class="col-sm-2 col-form-label">Valor A</label>
                         <div class="col-sm-10">
-                        <input type="number" min="1" class="form-control" id="numero" name="numero" placeholder=" Digite o valor" required>
+                        <input type="number" min="1" required class="form-control" id="numero" name="numero" placeholder=" Digite o valor" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="combustivel" class="col-sm-2 col-form-label">Valor B</label>
                         <div class="col-sm-10">
-                        <input type="number" min="1" class="form-control" id="numero1" name="numero1" placeholder="Digite o valor" required>
+                        <input type="number" min="1" required class="form-control" id="numero1" name="numero1" placeholder="Digite o valor" required>
                         </div>
                     </div>
                     </div>

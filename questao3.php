@@ -21,7 +21,7 @@ function soma1($num,$num1){
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>PHP AdminLTE 3 | Dashboard</title>
+  <title>Questão 3</title>
   <?php
     include "header.php";
     ?>
