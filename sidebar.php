@@ -53,15 +53,57 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="questao1.php" class="nav-link active">
+                <a href="questao1.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Questão 1</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index2.html" class="nav-link">
+                <a href="questao2.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Questão 2</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="questao3.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Questão 3</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="questao4.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Questão 4</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="questao5.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Questão 5</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="questao6.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Questão 6</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="questao7.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Questão 7</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="questao8.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Questão 8</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="questao9.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Questão 9</p>
                 </a>
               </li>
               <li class="nav-item">

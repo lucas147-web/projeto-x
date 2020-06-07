@@ -4,11 +4,13 @@ $alg1 = $_POST['numero1'];
 
 function soma1($num,$num1){
 
-  $expressao = ($num + $num1);
+  $multi    = ($num * $num);
 
-  $multi     = ($expressao * $num);
+  $multi1   = ($num1 * $num1);
 
-  return $multi;
+  $expressao     = $multi + $multi1;
+
+  return $expressao;
 }
 
 ?>
@@ -19,7 +21,7 @@ function soma1($num,$num1){
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Questão 1</title>
+  <title>PHP AdminLTE 3 | Dashboard</title>
   <?php
     include "header.php";
     ?>
@@ -38,12 +40,12 @@ function soma1($num,$num1){
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Questão 1</h1>
+            <h1 class="m-0 text-dark">Questão 3</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-              <li class="breadcrumb-item active">Questão 1</li>
+              <li class="breadcrumb-item active">Questão 3</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -54,11 +56,12 @@ function soma1($num,$num1){
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <h2> 1. Escreva um algoritmo para somar dois números e multiplicar o resultado pelo primeiro número.</h2>
+            <h2>3. Escreva um algoritmo que leia dois números, calcule o quadrado de cada um, some os quadrados
+e mostre o resultado.</h2>
                     <!-- Horizontal Form -->
             <div class="card card-info">
                 <div class="card-header">
-                    <h3 class="card-title">Formula: (A + B) * A:</h3>
+                    <h3 class="card-title">Formula: (A² + B²):</h3>
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->

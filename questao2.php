@@ -1,25 +1,23 @@
 <?php
-$alg  = $_POST['numero'];
-$alg1 = $_POST['numero1'];
 
-function soma1($num,$num1){
+$num        =   $_POST['valor'];
+$num1       =   $_POST['valor1'];
+$num2       =   $_POST['valor2'];
 
-  $expressao = ($num + $num1);
+function media($var,$var1,$var2){
 
-  $multi     = ($expressao * $num);
+    $expres = ($var + $var1 + $var2)/3;
 
-  return $multi;
+    return $expres;
 }
 
 ?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Questão 1</title>
+  <title>Questão 2</title>
   <?php
     include "header.php";
     ?>
@@ -38,12 +36,12 @@ function soma1($num,$num1){
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Questão 1</h1>
+            <h1 class="m-0 text-dark">Questão 2</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-              <li class="breadcrumb-item active">Questão 1</li>
+              <li class="breadcrumb-item active">Questão 2</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -54,28 +52,30 @@ function soma1($num,$num1){
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <h2> 1. Escreva um algoritmo para somar dois números e multiplicar o resultado pelo primeiro número.</h2>
+                <h2>2. Escreva um algoritmo que leia três números nas variáveis Val1, Val2 e Val3, calcule sua média na
+variável média e exiba para o usuário o resultado.</h2>
                     <!-- Horizontal Form -->
             <div class="card card-info">
                 <div class="card-header">
-                    <h3 class="card-title">Formula: (A + B) * A:</h3>
+                    <h3 class="card-title">Formula: (A + B + C)/3 </h3>
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form name="form_consumo" id="form_consumo" action="" method="POST" class="form-horizontal">
+                <form name="form_media" id="form_media" action="" method="POST" class="form-horizontal">
                     <div class="card-body">
-                    <div class="form-group row">
-                        <label for="distancia" class="col-sm-2 col-form-label">Valor A</label>
-                        <div class="col-sm-10">
-                        <input type="number" min="1" class="form-control" id="numero" name="numero" placeholder=" Digite o valor" required>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="combustivel" class="col-sm-2 col-form-label">Valor B</label>
-                        <div class="col-sm-10">
-                        <input type="number" min="1" class="form-control" id="numero1" name="numero1" placeholder="Digite o valor" required>
-                        </div>
-                    </div>
+                    <div class="card-body">
+                <div class="row">
+                  <div class="col-3">
+                    <input type="text" name="valor" id="valor" class="form-control" placeholder="A. Digite um valor">
+                  </div>
+                  <div class="col-4">
+                    <input type="text"  name="valor1" id="valor1" class="form-control" placeholder="B. Digite um valor">
+                  </div>
+                  <div class="col-5">
+                    <input type="text"  name="valor2" id="valor2" class="form-control" placeholder="C. Digite um valor">
+                  </div>
+                </div>
+              </div>
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
@@ -85,7 +85,8 @@ function soma1($num,$num1){
                     <!-- /.card-footer -->
                 </form>
             </div>
-    <?php echo "Resultado: ".soma1($alg,$alg1) ?>
+
+            <?php echo "A média dos valores é: ".number_format(media($num,$num1,$num2),2)?>
     
       </div><!-- /.container-fluid -->
     </section>

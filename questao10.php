@@ -11,7 +11,7 @@
         return $consumo_medio;
     }
 ?>
-
+ <?php echo "Consumo médio de seu veículo é: ".consumo($dist,$comb)."Km/lts.";?>
 
 <!DOCTYPE html>
 <html>
@@ -20,14 +20,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Questão 10</title>
   <?php
-    include "projeto-X/header.php";
+    include "header.php";
     ?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
 <?php
-    include "projeto-X/sidebar.php";
+    include "sidebar.php";
 ?>
 
   <!-- Content Wrapper. Contains page content -->
@@ -57,7 +57,7 @@
                     <!-- Horizontal Form -->
             <div class="card card-info">
                 <div class="card-header">
-                    <h3 class="card-title"></h3>
+                    <h3 class="card-title">Distância/Combustível</h3>
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
@@ -95,7 +95,7 @@
   <!-- /.content-wrapper -->
 
   <?php
-    include "htdocs/projeto-X/footer.php";
+    include "footer.php";
   ?>
 
 
