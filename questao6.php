@@ -52,34 +52,57 @@ return $total;
     <!-- /.content-header -->
 
     <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-            <h3>6. Escreva um algoritmo que receba o valor de um produto e calcule um desconto de 7%, exibindo
-para o usuário o valor original, o valor do desconto e o valor com o desconto.</h3>
-            <!-- general form elements disabled -->
-            <div class="card card-warning">
-              <div class="card-header">
-                <h3 class="card-title">Salário</h3>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-    
-                    <div class="row">
-                        <!-- textarea -->
-                        <div class="col-sm-6">
+        <section class="content">
+          <div class="container-fluid">
+                <h3>6. Escreva um algoritmo que receba o valor de um produto e calcule um desconto de 7%, exibindo
+                    para o usuário o valor original, o valor do desconto e o valor com o desconto.</h3>
+                    <!-- general form elements disabled -->
+              <div class="card card-warning col-sm-6">
+                  <div class="card-header">
+                    <h3 class="card-title">Calcular desconto do produto</h3>
+                  </div>
+                        <!-- /.card-header -->
+                  <div class="card-body">
+                  <form role="form" name="form_produto"  action="" method="POST" id="form_produto">
+                      <div class="row">
+                          <div class="col-sm">
+                                      <!-- text input -->
+                              <div class="form-group">
+                                  <label>Produto</label>
+                                  <input type="number"min="1" required  name="valor" id="valor" class="form-control" placeholder="Digite o valor do produto">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                              <!-- textarea -->
+                        <div class="col-sm">
                             <div class="form-group">
                                 <label>Resultado:</label>
-                                <textarea class="form-control" rows="3"  disabled><?php echo "O Valor do produto é: ".expressao($produto) ?></textarea>
+                                
+
+                                  <?php
+                                   echo "<br>"."Valor do produto: ".$produto    =   $_POST['valor']."<br>".
+                                   "desconto do produto: ".(expressao($produto) - $produto    =   $_POST['valor'])."<br>".
+                                   "Valor final do produto: ".expressao($produto) 
+                                   
+                                   ?>
+                                
+                                
+                            </div>
+                                <!-- /.card-body -->
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-info">Calcular</button>
+                                <button type="reset" class="btn btn-default float-right">Cancelar</button>
                             </div>
                         </div>
-                    </div>
+                      </div>
             
-            </div>
-
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-  </div>
+                  </div>
+                  </form>
+              </div>
+        </section>
+      <!-- /.content -->
+      </div>
   <!-- /.content-wrapper -->
 
   <?php
