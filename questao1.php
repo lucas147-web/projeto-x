@@ -56,7 +56,7 @@ function soma1($num,$num1){
       <div class="container-fluid">
         <h2> 1. Escreva um algoritmo para somar dois números e multiplicar o resultado pelo primeiro número.</h2>
                     <!-- Horizontal Form -->
-            <div class="card card-info">
+            <div class="card card-dark">
                 <div class="card-header">
                     <h3 class="card-title">Formula: (A + B) * A:</h3>
                 </div>
@@ -66,26 +66,39 @@ function soma1($num,$num1){
                     <div class="card-body">
                     <div class="form-group row">
                         <label for="distancia" class="col-sm-2 col-form-label">Valor A</label>
-                        <div class="col-sm-10">
+                        <div class="col-sm">
                         <input type="number" min="1" required class="form-control" id="numero" name="numero" placeholder=" Digite o valor" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="combustivel" class="col-sm-2 col-form-label">Valor B</label>
-                        <div class="col-sm-10">
+                        <div class="col-sm">
                         <input type="number" min="1" required class="form-control" id="numero1" name="numero1" placeholder="Digite o valor" required>
                         </div>
                     </div>
                     </div>
+                    <div class="card-body">
+                        
+                        <div class="row">
+                            <!-- textarea -->
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label>Resultado:</label>
+                                    <textarea class="form-control" rows="3"  disabled>   <?php echo soma1($alg,$alg1) ?></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
-                    <button type="submit" class="btn btn-info">Calcular</button>
-                    <button type="reset" class="btn btn-default float-right">Cancelar</button>
+                    <button type="submit" class="btn btn-dark">Calcular</button>
+                    <button type="reset" class="btn btn-danger float-right">Cancelar</button>
                     </div>
                     <!-- /.card-footer -->
                 </form>
             </div>
-    <?php echo "Resultado: ".soma1($alg,$alg1) ?>
+  
     
       </div><!-- /.container-fluid -->
     </section>

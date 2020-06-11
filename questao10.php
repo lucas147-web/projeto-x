@@ -11,7 +11,7 @@
         return $consumo_medio;
     }
 ?>
- <?php echo "Consumo médio de seu veículo é: ".consumo($dist,$comb)."Km/lts.";?>
+
 
 <!DOCTYPE html>
 <html>
@@ -55,7 +55,7 @@
       <div class="container-fluid">
         <h2>10. Escreva um algoritmo que receba de entrada a distância total (em km) percorrida por um automóvel e a quantidade de combustível (em litros) consumida para percorrê-la, calcule e imprima o consumo médio de combustível.  Fórmula: Consumo médio = Km / litros.</h2>
                     <!-- Horizontal Form -->
-            <div class="card card-info">
+            <div class="card card-dark">
                 <div class="card-header">
                     <h3 class="card-title">Distância/Combustível</h3>
                 </div>
@@ -76,16 +76,28 @@
                         </div>
                     </div>
                     </div>
-                    <!-- /.card-body -->
-                    <div class="card-footer">
-                    <button type="submit" class="btn btn-info">Calcular</button>
-                    <button type="reset" class="btn btn-default float-right">Cancelar</button>
-                    </div>
+                    <div class="row">
+                        <!-- textarea -->
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label>Resultado:   </label>
+                               
+                                <?php  echo "<br>Consumo médio de seu veículo é: ".consumo($dist,$comb)."Km/lts.";
+                                ?>
+                                
+                            </div>
+                            <!-- /.card-body -->
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-dark">Calcular</button>
+                                <button type="reset" class="btn btn-danger float-right">Cancelar</button>
+                            </div>
+                        </div>
+                        </div>
                     <!-- /.card-footer -->
                 </form>
             </div>
     
-            <?php echo "Consumo médio de seu veículo é: ".consumo($dist,$comb)."Km/lts.";?>
+
     
     
       </div><!-- /.container-fluid -->

@@ -65,13 +65,12 @@ return $totalfinal;
 • A partir de 2017 (inclusive), os aumentos salariais sempre
  corresponderam ao dobro do percentual do ano anterior.</pre></h3>
             <!-- general form elements disabled -->
-            <div class="card card-warning">
+            <div class="card card-dark">
               <div class="card-header">
                 <h3 class="card-title">Salário</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
-    
                     <div class="row">
                         <!-- textarea -->
                         <div class="col-sm-6">
@@ -81,8 +80,7 @@ return $totalfinal;
                             </div>
                         </div>
                     </div>
-            
-            </div>
+               </div>
 
       </div><!-- /.container-fluid -->
     </section>

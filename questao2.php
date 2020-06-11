@@ -55,7 +55,7 @@ function media($var,$var1,$var2){
                 <h2>2. Escreva um algoritmo que leia três números nas variáveis Val1, Val2 e Val3, calcule sua média na
 variável média e exiba para o usuário o resultado.</h2>
                     <!-- Horizontal Form -->
-            <div class="card card-info">
+            <div class="card card-dark ">
                 <div class="card-header">
                     <h3 class="card-title">Formula: (A + B + C)/3 </h3>
                 </div>
@@ -65,29 +65,39 @@ variável média e exiba para o usuário o resultado.</h2>
                     <div class="card-body">
                     <div class="card-body">
                 <div class="row">
-                  <div class="col-3">
-                    <input type="text" name="valor" id="valor" class="form-control" placeholder="A. Digite um valor">
+                  <div class="col">
+                    <input type="text" name="valor" id="valor" class="form-control" placeholder="A. valor">
                   </div>
-                  <div class="col-4">
-                    <input type="text"  name="valor1" id="valor1" class="form-control" placeholder="B. Digite um valor">
+                  <div class="col">
+                    <input type="text"  name="valor1" id="valor1" class="form-control" placeholder="B. valor">
                   </div>
-                  <div class="col-5">
-                    <input type="text"  name="valor2" id="valor2" class="form-control" placeholder="C. Digite um valor">
+                  <div class="col">
+                    <input type="text"  name="valor2" id="valor2" class="form-control" placeholder="C. valor">
                   </div>
                 </div>
               </div>
+              <div class="card-body">
+    
+                    <div class="row">
+                        <!-- textarea -->
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label>Resultado:</label>
+                                <textarea class="form-control" rows="3"  disabled><?php echo "A média dos valores é: ".number_format(media($num,$num1,$num2),2)?></textarea>
+                            </div>
+                        </div>
+                    </div>
+            
+            </div>
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
-                    <button type="submit" class="btn btn-info">Calcular</button>
-                    <button type="reset" class="btn btn-default float-right">Cancelar</button>
+                    <button type="submit" class="btn btn-dark">Calcular</button>
+                    <button type="reset" class="btn btn-danger float-right">Cancelar</button>
                     </div>
                     <!-- /.card-footer -->
                 </form>
             </div>
-
-            <?php echo "A média dos valores é: ".number_format(media($num,$num1,$num2),2)?>
-    
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->

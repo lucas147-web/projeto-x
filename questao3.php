@@ -59,7 +59,7 @@ function soma1($num,$num1){
             <h2>3. Escreva um algoritmo que leia dois números, calcule o quadrado de cada um, some os quadrados
 e mostre o resultado.</h2>
                     <!-- Horizontal Form -->
-            <div class="card card-info">
+            <div class="card card-dark">
                 <div class="card-header">
                     <h3 class="card-title">Formula: (A² + B²):</h3>
                 </div>
@@ -80,15 +80,28 @@ e mostre o resultado.</h2>
                         </div>
                     </div>
                     </div>
+                    <div class="card-body">
+                        
+                        <div class="row">
+                            <!-- textarea -->
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label>Resultado:</label>
+                                    <textarea class="form-control" rows="3"  disabled>   <?php echo soma1($alg,$alg1) ?></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
-                    <button type="submit" class="btn btn-info">Calcular</button>
-                    <button type="reset" class="btn btn-default float-right">Cancelar</button>
+                    <button type="submit" class="btn btn-dark">Calcular</button>
+                    <button type="reset" class="btn btn-danger float-right">Cancelar</button>
                     </div>
                     <!-- /.card-footer -->
                 </form>
             </div>
-    <?php echo "Resultado: ".soma1($alg,$alg1) ?>
+ 
     
       </div><!-- /.container-fluid -->
     </section>

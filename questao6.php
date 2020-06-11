@@ -57,7 +57,7 @@ return $total;
                 <h3>6. Escreva um algoritmo que receba o valor de um produto e calcule um desconto de 7%, exibindo
                     para o usuário o valor original, o valor do desconto e o valor com o desconto.</h3>
                     <!-- general form elements disabled -->
-              <div class="card card-warning col-sm-6">
+              <div class="card card-dark ">
                   <div class="card-header">
                     <h3 class="card-title">Calcular desconto do produto</h3>
                   </div>
@@ -91,8 +91,8 @@ return $total;
                             </div>
                                 <!-- /.card-body -->
                             <div class="card-footer">
-                                <button type="submit" class="btn btn-info">Calcular</button>
-                                <button type="reset" class="btn btn-default float-right">Cancelar</button>
+                                <button type="submit" class="btn btn-dark">Calcular</button>
+                                <button type="reset" class="btn btn-danger float-right">Cancelar</button>
                             </div>
                         </div>
                       </div>
