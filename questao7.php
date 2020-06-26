@@ -1,20 +1,33 @@
 <?php
 
+// números informados pelo o usuário
+$val  =   2;
+$val1 =   120;
+$y = 0;
 
-$vetor =  array();
-$vetor1 =   array(0,0,0,0,0,0,0,0,0,0); 
 
-for ($i=0; $i<100 ;$i++){
+//alimentar vetor com 100 posições
 
-($vetor[$i]  = (rand(1,100)));
-if($vetor[$i] % 2 ==0){
-($vetor1[$i] = $vetor[$i]);
+for ($i=0; $i<99 ;$i++){
 
+$vetor[$i]  = rand($val,$val1) ;
 }
 
+//identificar os numeros pares e armazenar em outro vetor
+for ($i=0; $i<99 ;$i++){
+
+//verificar se o número é par
+if(($vetor[$i] % 2) ==0){
+//limitanto numero de indices
+    if($y <= 9 ){
+
+($vetor1[$y] = $vetor[$i]);
+
+    $y++;
+
 
 }
-echo $vetor[$i];
-
-
+}
+}
+echo "o valor é".array_sum($vetor1);
 ?>
